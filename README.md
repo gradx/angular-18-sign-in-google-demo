@@ -4,7 +4,7 @@ Complete e2e demo of an integration with Sign in with Google using [GSI](https:/
 
 **Includes:** 
 - Sign In
-- Token relay to server *(for popups it redirects to the server-side login-result)*
+- Token relay to server *(for redirect it posts server-side to login-result)*
 - Token validation server-side
 - JWT setup in Web Api
 - Identity managed in NgRx Signal Store

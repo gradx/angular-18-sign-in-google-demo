@@ -1,4 +1,4 @@
-# Angular 17 + Google Identity demo Angular 17
+# Angular 18 + Google Identity demo 
 
 Complete e2e demo of an integration with Sign in with Google using [GSI](https://developers.google.com/identity/gsi/web/guides/overview) and .NET 8.0 Web API (server)
 

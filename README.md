@@ -1,6 +1,6 @@
-# Google Identity Services + Angular 18 + Popup/Redirect demo 
+# [Google Identity Services](https://developers.google.com/identity/gsi/web/guides/overview) + Angular 18 + Popup/Redirect demo 
 
-Complete e2e demo of an integration with **Sign in with Google** using [GSI](https://developers.google.com/identity/gsi/web/guides/overview) and .NET 8.0 Web API (server)
+Complete e2e demo of an integration with **Sign in with Google** using [GSI](https://developers.google.com/identity/gsi/web/guides/client-library) and .NET 8.0 Web API (server)
 
 **Includes:** 
 - Sign In

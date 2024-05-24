@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { environment } from '../../../environments/environment';
 
 
@@ -18,5 +18,5 @@ export class GoogleSigninComponent {
 
   constructor() { 
     this.env = environment;
-  }
+  } 
 }

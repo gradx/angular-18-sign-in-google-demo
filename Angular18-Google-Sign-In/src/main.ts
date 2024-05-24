@@ -24,9 +24,8 @@ function decodeJwtResponse(token: string) {
 
 window.handleResponse = (response: any) => { 
   window.dataService.validateToken(JSON.stringify(response.credential)).subscribe({
-    next: response => {
-      let result = response as string;
-      let responsePayload = decodeJwtResponse(result);
+    next: (response: any) => {
+      let responsePayload = decodeJwtResponse(response.result);
 
       window.authProvider.store.update({ 
           name: responsePayload.name, 
@@ -38,7 +37,7 @@ window.handleResponse = (response: any) => {
         }
       );
 
-      window.authProvider.saveToken(result);
+      window.authProvider.saveToken(response.result);
       window.location.href = '/login-result';
     }
   });

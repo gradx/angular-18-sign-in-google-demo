@@ -29,9 +29,9 @@ window.handleResponse = (response: any) => {
 
 ```
 
-[Callback events are handled in main](https://github.com/gradx/angular-18-sign-in-google-demo/blob/main/Angular18-Google-Sign-In/src/main.ts)
+[add the handlers to main.ts](https://github.com/gradx/angular-18-sign-in-google-demo/blob/main/Angular18-Google-Sign-In/src/main.ts)
 
-To handle redirect posts [server side](https://github.com/gradx/angular-18-sign-in-google-demo/blob/main/DotNet8MinimalApiJWT/DotNet8MinimalApiJWT/Program.cs): 
+Redirect URI `https://localhost:7109/login-result` [server side](https://github.com/gradx/angular-18-sign-in-google-demo/blob/main/DotNet8MinimalApiJWT/DotNet8MinimalApiJWT/Program.cs): 
 ```
 app.MapPost("/login-result", [AllowAnonymous] async (HttpContext context) =>
 {

@@ -12,6 +12,25 @@ Complete e2e demo of an integration with **Sign in with Google** using [GSI](htt
 
 Designed as a skeleton project that can help bootstrap a new application with minimal changes
 
+To handle the callback events from `data-callback="handleResponse"`
+
+```            
+declare global {
+  interface Window {
+    handleResponse: (response: any) => void;
+    ...
+  }
+}
+
+window.handleResponse = (response: any) => { 
+   ...
+}
+
+
+```
+
+[Callback events are handled in main](https://github.com/gradx/angular-18-sign-in-google-demo/blob/main/Angular18-Google-Sign-In/src/main.ts)
+
 ### Configuration Required (environment.ts / environment.development.ts)
 `google_client_id: '222000842037-qrfms25as5b680051uia4u6g3t60bgef.apps.googleusercontent.com'`
 

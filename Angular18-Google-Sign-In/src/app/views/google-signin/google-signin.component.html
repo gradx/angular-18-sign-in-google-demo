@@ -3,26 +3,29 @@
           <div class="col-4 offset-4">
                <div class="row">
                     <div class="col">
-                         <div id="g_id_onload"
-                              [attr.data-client_id]="env.google_client_id"
-                              data-context="signin"
-                              data-ux_mode="redirect"
-                              [attr.data-login_uri]="env.google_redirect_uri"
-                              data-callback="handleResponse"
-                              data-auto_prompt="false">
+                         <div class="p-5 text-center bg-body-tertiary rounded-3">
+                              <h1 class="text-body-emphasis mb-5">Redirect Version</h1>
+                              <div class="d-inline-flex gap-2 mb-5">
+                                   <div id="g_id_onload"
+                                        [attr.data-client_id]="env.google_client_id"
+                                        data-context="signin"
+                                        data-ux_mode="redirect"
+                                        [attr.data-login_uri]="env.google_redirect_uri"
+                                        data-callback="handleResponse"
+                                        data-auto_prompt="false">
+                                   </div>
+                              
+                                   <div class="g_id_signin"
+                                        data-type="standard"
+                                        data-shape="rectangular"
+                                        data-theme="outline"
+                                        data-text="signin_with"
+                                        data-size="large"
+                                        data-logo_alignment="left">
+                                   </div>
+                              </div>
                          </div>
-                         
-                         <div class="g_id_signin"
-                              data-type="standard"
-                              data-shape="rectangular"
-                              data-theme="outline"
-                              data-text="signin_with"
-                              data-size="large"
-                              data-logo_alignment="left">
-                         </div>
-                    </div>
-                    <div class="col">
-                         <a href="http://localhost:4200/popup">Popup</a>
+                         <a href="http://localhost:4200/popup">Go To Popup Version</a>
                     </div>
                </div>
           </div>

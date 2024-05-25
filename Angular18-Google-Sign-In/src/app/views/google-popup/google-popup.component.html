@@ -1,18 +1,32 @@
-Popup
-
-<div id="g_id_onload"
-    [attr.data-client_id]="env.google_client_id"
-    data-context="signin"
-    data-ux_mode="popup"
-    data-callback="handleResponse"
-    data-itp_support="true">
-</div>
-
-<div class="g_id_signin"
-    data-type="standard"
-    data-shape="rectangular"
-    data-theme="outline"
-    data-text="signin_with"
-    data-size="large"
-    data-logo_alignment="left">
+<div class="container-fluid">
+    <div class="row">
+         <div class="col-4 offset-4">
+              <div class="row">
+                   <div class="col">
+                        <div class="p-5 text-center bg-body-tertiary rounded-3">
+                             <h1 class="text-body-emphasis mb-5">Popup Version</h1>
+                             <div class="d-inline-flex gap-2 mb-5">
+                                <div id="g_id_onload"
+                                    [attr.data-client_id]="env.google_client_id"
+                                    data-context="signin"
+                                    data-ux_mode="popup"
+                                    data-callback="handleResponse"
+                                    data-itp_support="true">
+                                </div>
+                                
+                                <div class="g_id_signin"
+                                    data-type="standard"
+                                    data-shape="rectangular"
+                                    data-theme="outline"
+                                    data-text="signin_with"
+                                    data-size="large"
+                                    data-logo_alignment="left">
+                                </div>
+                             </div>
+                        </div>
+                        <a href="http://localhost:4200/signin">Go To Redirect Version</a>
+                   </div>
+              </div>
+         </div>
+    </div>
 </div>

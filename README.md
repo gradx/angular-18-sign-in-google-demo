@@ -3,7 +3,7 @@
 Complete e2e demo of an integration with **Sign in with Google** using [GSI](https://developers.google.com/identity/gsi/web/guides/client-library) and .NET 8.0 Web API (server-side)
 
 **Includes:** 
-- Token validation server-side
+- Token validation server-side: `await GoogleJsonWebSignature.ValidateAsync(credential);`
 - JwtSecurityTokenHandler & Claims managed server-side
 - Identity managed in NgRx Signal Store + Session storage
 - ~~[_provideExperimentalZonelessChangeDetection_](https://netbasal.com/navigating-the-new-era-of-angular-zoneless-change-detection-unveiled-e7404de69b89)~~ _Causes issues with [GSI_LOGGER]: Parameter client_id is not set correctly._

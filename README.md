@@ -12,4 +12,5 @@ Complete e2e demo of an integration with **Sign in with Google** using [GSI](htt
 
 Designed as a skeleton project that can help bootstrap a new application with minimal changes
 
-### Configuration Required after Google setup
+### Configuration Required after Google setup (environments.ts)
+`google_client_id: '222000842037-qrfms25as5b680051uia4u6g3t60bgef.apps.googleusercontent.com'`

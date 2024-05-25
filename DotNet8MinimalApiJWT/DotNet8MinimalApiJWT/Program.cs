@@ -101,7 +101,7 @@ app.MapGet("/security/getMessage", () => "Authorized API request successful").Re
 
 app.MapPost("/security/createToken", [AllowAnonymous] async ([FromBody] string jwt, HttpContext context) =>
 {
-    return Results.Ok(ValidateToken(jwt));
+    return Results.Ok(await ValidateToken(jwt));
 });
 
 app.UseAuthentication();

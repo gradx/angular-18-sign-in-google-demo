@@ -14,3 +14,12 @@ Designed as a skeleton project that can help bootstrap a new application with mi
 
 ### Configuration Required (environment.ts / environment.development.ts)
 `google_client_id: '222000842037-qrfms25as5b680051uia4u6g3t60bgef.apps.googleusercontent.com'`
+
+Which should provide you with the following two sign in options (Can't render both buttons in the same page): 
+![Redirect](https://github.com/gradx/angular-18-sign-in-google-demo/blob/main/docs/images/Redirect.png 'Redirect')
+
+![Popup](https://github.com/gradx/angular-18-sign-in-google-demo/blob/main/docs/images/Popup.png 'Popup')
+
+and after succcessfully signing in
+
+![Profile](https://github.com/gradx/angular-18-sign-in-google-demo/blob/main/docs/images/Profile.png 'Profile')
